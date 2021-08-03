@@ -68,8 +68,6 @@ import {
 
 extend( [ namesPlugin ] );
 
-const { __Visualizer: BoxControlVisualizer } = BoxControl;
-
 function getInnerBlocksTemplate( attributes ) {
 	return [
 		[
@@ -321,7 +319,6 @@ function CoverEdit( {
 		isRepeated,
 		minHeight,
 		minHeightUnit,
-		style: styleAttribute,
 		url,
 		alt,
 	} = attributes;
@@ -678,10 +675,6 @@ function CoverEdit( {
 				style={ { ...style, ...blockProps.style } }
 				data-url={ url }
 			>
-				<BoxControlVisualizer
-					values={ styleAttribute?.spacing?.padding }
-					showValues={ styleAttribute?.visualizers?.padding }
-				/>
 				<ResizableCover
 					className="block-library-cover__resize-container"
 					onResizeStart={ () => {
