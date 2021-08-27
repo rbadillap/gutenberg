@@ -27,7 +27,11 @@
 		"typography": {
 			"fontSize": true,
 			"lineHeight": true,
-			"__experimentalFontWeight": true
+			"__experimentalFontWeight": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true,
+				"lineHeight": true
+			}
 		}
 	}
 }
