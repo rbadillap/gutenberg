@@ -8,6 +8,7 @@ import {
 	__experimentalRegisterExperimentalCoreBlocks,
 } from '@wordpress/block-library';
 import {
+	registerInternalWidgetIds,
 	registerLegacyWidgetBlock,
 	registerLegacyWidgetVariations,
 	registerWidgetGroupBlock,
@@ -49,6 +50,8 @@ export function initialize( editorName, blockEditorSettings ) {
 			block.name.startsWith( 'core/site' )
 		);
 	} );
+
+	registerInternalWidgetIds();
 	registerCoreBlocks( coreBlocks );
 	registerLegacyWidgetBlock();
 	if ( process.env.GUTENBERG_PHASE === 2 ) {
