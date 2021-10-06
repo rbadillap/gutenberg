@@ -98,7 +98,10 @@
 				"rem",
 				"vh",
 				"vw"
-			]
+			],
+			"__experimentalDefaultControls": {
+				"blockGap": true
+			}
 		}
 	},
 	"viewScript": "file:./view.min.js",
