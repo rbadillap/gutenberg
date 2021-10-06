@@ -83,6 +83,7 @@ export default function LinkPreview( {
 									href={ value.url }
 								>
 									{ richData?.title ||
+										value?.text ||
 										value?.title ||
 										displayURL }
 								</ExternalLink>
