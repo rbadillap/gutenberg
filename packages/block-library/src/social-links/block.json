@@ -50,7 +50,7 @@
 			}
 		},
 		"spacing": {
-			"blockGap": true,
+			"blockGap": [ "horizontal", "vertical" ],
 			"margin": [ "top", "bottom" ],
 			"units": [
 				"px",

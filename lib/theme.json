@@ -213,8 +213,8 @@
 			]
 		},
 		"spacing": {
-			"blockGap": null,
-			"customMargin": false,
+			"blockGap": true,
+			"customMargin": true,
 			"customPadding": false,
 			"units": [ "px", "em", "rem", "vh", "vw", "%" ]
 		},
