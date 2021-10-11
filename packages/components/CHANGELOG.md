@@ -9,7 +9,12 @@
 ### Enhancements
 
 -   Removed the separator shown between `ToggleGroupControl` items ([#35497](https://github.com/WordPress/gutenberg/pull/35497)).
+-   The `ColorPicker` component property `onChangeComplete`, a function accepting a color object, was replaced with the property `onChange`, a function accepting a  string on  ([#35220](https://github.com/WordPress/gutenberg/pull/35220)).
+-  The property `disableAlpha`, was removed from the `ColorPicker` component. Use the new opposite property `enableAlpha` instead ([#35220](https://github.com/WordPress/gutenberg/pull/35220)).
 
+### Breaking Changes
+
+-   The `color` property a `tinycolor2` color object passed on `onChangeComplete` property of the `ColorPicker` component was removed. Please use the new `onChange` property that accepts a string color representation ([#35562](https://github.com/WordPress/gutenberg/pull/35562)).
 ## 18.0.0 (2021-10-12)
 
 ### Breaking Changes
